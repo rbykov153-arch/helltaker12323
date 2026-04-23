@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Helltaker Community | Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="main-wrapper">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">HELLTAKER</div>
+            <div class="nav-links">
+                <a href="main.html" class="nav-link active">Главная</a>
+                <a href="gallery.html" class="nav-link">Галерея</a>
+                <a href="friends.html" class="nav-link">Друзья</a>
+                                <a href="profile.html" class="nav-link active">Профиль</a>
+            </div>
+            <div class="user-info">
+                <span id="currentUserDisplay" class="username"></span>
+                <button id="logoutBtn" class="logout-btn">Выйти</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="welcome-section">
+            <h2>Добро пожаловать в Адское сообщество</h2>
+            <p id="welcomeMessage"></p>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="slide1.jpg" alt="Helltaker">
+                    <div class="slide-caption"></div>
+                </div>
+                <div class="slide">
+                    <img src="slide2.jpg" alt="Cerberus">
+                    <div class="slide-caption"></div>
+                </div>
+                <div class="slide">
+                    <img src="slide3.jpg" alt="Malina">
+                    <div class="slide-caption"></div>
+                </div>
+                <div class="slide">
+                    <img src="slide4.jpg" alt="Zdrada">
+                    <div class="slide-caption"></div>
+                </div>
+                <div class="slide">
+                    <img src="slide5.jpg" alt="Justice">
+                    <div class="slide-caption"></div>
+                </div>
+            </div>
+            <button class="slider-btn prev">❮</button>
+            <button class="slider-btn next">❯</button>
+            <div class="slider-dots"></div>
+        </div>
+
+        <div class="news-section">
+            <h3>Новости сообщества</h3>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-date">23 апреля 2026</div>
+                    <h4>Это сообщество создано!</h4>
+                    <p>ДА, я затянул, признаю косяк(аххаха косяк, смешное слово)
+                        -ВАШ ВЕЛИКИЙ АДМИН
+                    </p>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">23 апреля 2026</div>
+                    <h4>об Игре</h4>
+                    <p>Оказывается Helltaker вышел в 2020 гоуд, то есть игре больше пяти лет, ааааааааааааааа</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="auth.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

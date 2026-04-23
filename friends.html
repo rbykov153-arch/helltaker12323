@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Helltaker Community | Друзья</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="friends.css">
+</head>
+<body>
+<div class="friends-wrapper">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">HELLTAKER</div>
+            <div class="nav-links">
+                <a href="main.html" class="nav-link">Главная</a>
+                <a href="gallery.html" class="nav-link">Галерея</a>
+                <a href="friends.html" class="nav-link active">Друзья</a>
+            </div>
+            <div class="user-info">
+                <span id="currentUserDisplay" class="username"></span>
+                <button id="logoutBtn" class="logout-btn">Выйти</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="friends-content">
+        <div class="friends-header">
+            <h2>Мои друзья</h2>
+            <p>Демоны в вашем списке контактов</p>
+        </div>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchName" placeholder="Поиск по имени..." class="search-input">
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchCity" placeholder="Поиск по городу..." class="search-input">
+            </div>
+        </div>
+
+        <div class="friends-grid" id="friendsGrid"></div>
+    </div>
+</div>
+<script src="auth.js"></script>
+<script src="friends.js"></script>
+</body>
+</html>

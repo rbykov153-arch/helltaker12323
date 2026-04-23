@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Helltaker Community | Профиль</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+<div class="profile-wrapper">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">HELLTAKER</div>
+            <div class="nav-links">
+                <a href="main.html" class="nav-link">Главная</a>
+                <a href="gallery.html" class="nav-link">Галерея</a>
+                <a href="friends.html" class="nav-link">Друзья</a>
+                <a href="profile.html" class="nav-link active">Профиль</a>
+            </div>
+            <div class="user-info">
+                <span id="currentUserDisplay" class="username"></span>
+                <button id="logoutBtn" class="logout-btn">Выйти</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-content">
+        <div class="profile-header">
+            <h2>Редактирование профиля</h2>
+            <p>Измени свои данные</p>
+        </div>
+
+        <div class="profile-card">
+            <div class="avatar-section">
+                <div class="avatar-preview">
+                    <img id="avatarPreview" src="default-avatar.png" alt="Аватар">
+                </div>
+                <div class="avatar-select">
+                    <label>Выбери аватар:</label>
+                    <select id="avatarSelect">
+                        <option value="default-avatar.gif">Аватар 1</option>
+                        <option value="avatar1.gif">Аватар 2</option>
+                        <option value="avatar2.gif">Аватар 3</option>
+                        <option value="avatar3.gif">Аватар 4</option>
+                        <option value="avatar4.gif">Аватар 5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="profile-form">
+                <div class="form-group">
+                    <label>Логин</label>
+                    <input type="text" id="profileLogin" class="readonly-input" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>Имя пользователя</label>
+                    <input type="text" id="profileName" placeholder="Введи своё имя">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="profileEmail" placeholder="Введи свою почту">
+                </div>
+
+                <div class="form-group">
+                    <label>О себе</label>
+                    <textarea id="profileBio" rows="4" placeholder="Расскажи о себе"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Любимый демон</label>
+                    <select id="favoriteDemon">
+                        <option value="Пандемоника">Пандемоника</option>
+                        <option value="Модеус">Модеус</option>
+                        <option value="Цербер">Цербер</option>
+                        <option value="Малина">Малина</option>
+                        <option value="Здрада">Здрада</option>
+                        <option value="Джастис">Джастис</option>
+                        <option value="Люцифер">Люцифер</option>
+                        <option value="Вельзевул">Вельзевул</option>
+                        <option value="Джаджмент">Джаджмент</option>
+                        <option value="Азазель">Азазель</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Новый пароль</label>
+                    <input type="password" id="profilePassword" placeholder="Оставь пустым, чтобы не менять">
+                </div>
+
+                <div class="form-group">
+                    <label>Подтверждение пароля</label>
+                    <input type="password" id="profilePasswordConfirm" placeholder="Введи пароль ещё раз">
+                </div>
+
+                <div class="profile-buttons">
+                    <button id="saveProfileBtn" class="save-btn">Сохранить изменения</button>
+                    <button id="resetProfileBtn" class="reset-btn">Сбросить</button>
+                </div>
+
+                <div id="profileMessage" class="profile-message"></div>
+            </div>
+        </div>
+
+        <div class="profile-stats">
+            <h3>Статистика</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="statMemberSince">-</div>
+                    <div class="stat-label">На сайте с</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="statLastLogin">-</div>
+                    <div class="stat-label">Последний вход</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="statVisits">-</div>
+                    <div class="stat-label">Посещений</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="auth.js"></script>
+<script src="profile.js"></script>
+</body>
+</html>

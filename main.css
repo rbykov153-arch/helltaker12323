@@ -1,0 +1,306 @@
+.main-wrapper {
+    min-height: 100%;
+    background: #0a0505;
+}
+
+.navbar {
+    background: #0a0505;
+    border-bottom: 2px solid #b32d2d;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #ff8989;
+}
+
+.nav-link.active {
+    color: #ffffff;
+    border-bottom: 2px solid #b32d2d;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.username {
+    color: #ff8989;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logout-btn {
+    background: #b32d2d;
+    border: none;
+    padding: 6px 15px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.logout-btn:hover {
+    background: #8b2424;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-section h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    color: #cccccc;
+    font-size: 17px;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    height: 400px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+.slider-btn:hover {
+    background: #b32d2d;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #555555;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dot.active {
+    background: #b32d2d;
+}
+
+.news-section {
+    margin-top: 50px;
+}
+
+.news-section h3 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.news-card {
+    background: #1a0f0f;
+    border: 1px solid #b32d2d;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.news-card:hover {
+    border-color: #ff8989;
+}
+
+.news-date {
+    color: #ff8989;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.news-card h4 {
+    color: #ffffff;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.news-card p {
+    color: #cccccc;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        justify-content: center;
+    }
+    
+    .user-info {
+        justify-content: center;
+    }
+    
+    .slider {
+        height: 250px;
+    }
+    
+    .slider-btn {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+    
+    .slider-dots {
+        margin-top: 10px;
+    }
+    
+    .welcome-section h2 {
+        font-size: 24px;
+    }
+    
+    .news-section h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .nav-link {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .username {
+        font-size: 14px;
+    }
+    
+    .logout-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    
+    .welcome-section h2 {
+        font-size: 20px;
+    }
+    
+    .slide-caption {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
