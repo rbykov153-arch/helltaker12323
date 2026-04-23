@@ -1,0 +1,150 @@
+body {
+    min-height: 100%;
+    background-image: url(fon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Segoe UI', 'Courier New', monospace;
+}
+
+.auth-container {
+    max-width: 500px;
+    width: 100%;
+    background: rgba(10, 5, 5, 0.9);
+    border: 2px solid #b32d2d;
+    padding: 30px 25px;
+    transition: 0.3s;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sub {
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #b32d2d;
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    flex: 1;
+    background: #1e1212;
+    border: none;
+    padding: 12px 0;
+    font-size: 19px;
+    font-weight: bold;
+    color: #aaaaaa;
+    cursor: pointer;
+    transition: 0.2s;
+    border-bottom: 2px solid #5e1a1a;
+}
+
+.tab-btn.active {
+    background: #b32d2d;
+    color: #ffffff;
+    border-bottom: 2px solid #b32d2d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    padding: 14px 18px;
+    background: #2c1a1a;
+    border: 1px solid #b32d2d;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.2s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #ff8989;
+}
+
+.action-btn {
+    width: 100%;
+    background: #b32d2d;
+    border: none;
+    padding: 14px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.action-btn:hover {
+    background: #8b2424;
+}
+
+.info-message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #cccccc;
+    background: #2f1515;
+    padding: 10px;
+}
+
+.error {
+    color: #ff8a7a;
+    background: #3a1010;
+}
+
+.success {
+    color: #a0ffa0;
+    background: #1a3a1a;
+}
+
+hr {
+    border-color: #b32d2d;
+    margin: 20px 0;
+}
+
+@media (max-width: 550px) {
+    .auth-container {
+        padding: 20px;
+    }
+    h1 { 
+        font-size: 28px; 
+    }
+}
