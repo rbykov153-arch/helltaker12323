@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Helltaker Community | Вход</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="auth-container" id="authContainer">
+    <h1>HELLTAKER</h1>
+
+    <div class="tabs">
+        <button class="tab-btn active" id="loginTabBtn">Вход</button>
+        <button class="tab-btn" id="registerTabBtn">Регистрация</button>
+    </div>
+
+    <div id="loginForm">
+        <div class="form-group">
+            <label>Логин</label>
+            <input type="text" id="loginUsername" placeholder="Введите логин" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <label>Пароль</label>
+            <input type="password" id="loginPassword" placeholder="Введите пароль">
+        </div>
+        <button class="action-btn" id="doLoginBtn">Войти</button>
+        <div id="loginMessage" class="info-message"></div>
+    </div>
+
+    <div id="registerForm" style="display: none;">
+        <div class="form-group">
+            <label>Новый логин</label>
+            <input type="text" id="regUsername" placeholder="Придумайте логин" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <label>Новый пароль</label>
+            <input type="password" id="regPassword" placeholder="Минимум 3 символа">
+        </div>
+        <button class="action-btn" id="doRegisterBtn">Зарегистрироваться</button>
+        <div id="regMessage" class="info-message"></div>
+    </div>
+    <hr>
+</div>
+<script src="auth.js"></script>
+</body>
+</html>
